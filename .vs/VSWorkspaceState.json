@@ -1,9 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\djangoproject",
-    "\\djangoproject\\djangoproject"
+    "\\django_website",
+    "\\posts"
   ],
-  "SelectedNode": "\\djangoproject\\manage.py",
+  "SelectedNode": "\\posts\\urls.py",
   "PreviewInSolutionExplorer": false
 }
