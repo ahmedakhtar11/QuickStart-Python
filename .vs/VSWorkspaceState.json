@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\django_website",
-    "\\posts"
+    "\\posts",
+    "\\posts\\templates",
+    "\\posts\\templates\\posts"
   ],
-  "SelectedNode": "\\posts\\urls.py",
+  "SelectedNode": "\\posts\\templates\\posts\\layout.html",
   "PreviewInSolutionExplorer": false
 }

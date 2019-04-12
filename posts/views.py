@@ -27,6 +27,8 @@ def test2(request):
   return HttpResponse(response)
 
 def app(request):
-  return render(request, 'posts/app.html')
-  
+  # return render(request, 'posts/app.html')
+  return render(request, 'posts/app.html', {
+    'title': 'Latest Posts'
+  })
 
