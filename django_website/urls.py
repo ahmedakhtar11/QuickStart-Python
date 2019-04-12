@@ -25,7 +25,12 @@ app_name = 'posts'
 
 
 urlpatterns = [
-    # Added ==>
+
     url(r'^admin/', admin.site.urls),
+
+    # URLs of /posts/ include posts app URLs  ==>
     url(r'^posts/', include('posts.urls')),
+
+    # URLs include posts app URLs ==>
+    url(r'^', include('posts.urls'))
 ]
