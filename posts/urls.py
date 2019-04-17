@@ -22,5 +22,6 @@ urlpatterns = [
     url(r'^app/$', views.app, name='app'),
 
     # Direct No URL to App ==>
-    url(r'^$', views.app, name='app')
+    url(r'^$', views.app, name='app'),
+    url(r'^details/(?P<id>\d+)/$', views.details, name='details')
 ]

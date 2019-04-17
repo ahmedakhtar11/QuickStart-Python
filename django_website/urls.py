@@ -19,7 +19,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-# Added ==>
+
 from django.conf.urls import include, url
 app_name = 'posts'
 
@@ -32,5 +32,5 @@ urlpatterns = [
     url(r'^posts/', include('posts.urls')),
 
     # URLs include posts app URLs ==>
-    url(r'^', include('posts.urls'))
+    url(r'^$', include('posts.urls'))
 ]

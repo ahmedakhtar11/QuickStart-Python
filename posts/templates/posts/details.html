@@ -1,16 +1,22 @@
-﻿{% extends 'posts/layout.html' %}
+{% extends 'posts/layout.html' %}
 
 {% block content %}
 <div class="center-align red lighten-3">
 Welcome to the Python Posts App
 </div>
 <div class="center-align red lighten-3">
-{{title}}
+{{post.title}}
 </div>
-
-<ul class="collection">
+<div class="card-content">
+    {{post.body}}
+</div>
+<div class="card-action">
+  {{post.created_at}}
+</div>
+<a href="/posts" class="btn">Go Back</a>
+<!-- <ul class="collection">
     {% for post in posts %}
       <li class="collection-item"><a href="/posts/details/{{post.id}}">{{post.title}}</a></li>
     {% endfor %}
-</ul>
+</ul> -->
 {% endblock %}
